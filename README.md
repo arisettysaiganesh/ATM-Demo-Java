@@ -134,21 +134,5 @@ Feel free to fork this project, create a pull request, or open issues for improv
 ## Acknowledgements
 - Thanks to the open-source community for providing valuable libraries and tools.
 
----
-
-**ATM Demo Project in Java**  
-This project demonstrates a real-world example of applying Java's core concepts in a simple ATM system simulation.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributing
-Feel free to fork this project, create a pull request, or open issues for improvements and bug fixes.
-
-## Acknowledgements
-- Thanks to the open-source community for providing valuable libraries and tools.
-
----
-
 **ATM Demo Project in Java**  
 This project demonstrates a real-world example of applying Java's core concepts in a simple ATM system simulation.
