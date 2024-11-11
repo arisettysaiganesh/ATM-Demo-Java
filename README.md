@@ -1,5 +1,3 @@
-# ATM-Demo-Java
- A Java-based ATM demo project utilizing OOP principles, exception handling, collections, I/O, multithreading, memory management, and annotations.
 # ATM Demo Project in Java
 
 This is a simple ATM system built using **Core Java** concepts. The project demonstrates the usage of various Java principles such as **Object-Oriented Programming (OOP)**, **Exception Handling**, **Collections Framework**, **Java I/O**, **Multithreading**, and **Java Memory Management**.
