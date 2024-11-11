@@ -62,6 +62,85 @@ atm-demo-java/
 - **TransactionHistory.java**: Manages the history of transactions using collections.
 - **UserInputHandler.java**: Handles user input and validates entries.
   
+### Directory Breakdown:
+1. **`atm-demo-java/`** (root directory): This is the top-level directory of your ATM demo project, which contains all the source code, resources, and documentation.
+
+2. **`src/`**: The folder where your **Java source code** resides.
+   - **`com/atm/`**: The main base package of the ATM system.
+     - **`accounts/`**: This package contains classes related to user accounts. For example:
+       - `Account.java`: A class that represents an individual user account with attributes like balance, account number, and methods to deposit, withdraw, etc.
+     - **`transactions/`**: This package handles all aspects related to transactions. For example:
+       - `Transaction.java`: A class that represents a transaction (either a deposit or withdrawal).
+       - `TransactionHistory.java`: A class that manages the transaction history using collections like `ArrayList`.
+     - **`utilities/`**: Utility classes that provide additional functionality. For example:
+       - `UserInputHandler.java`: A class responsible for handling user input, validating it, and possibly formatting or sanitizing it.
+       - `Logger.java`: A class for logging important events like transactions or errors.
+     - **`ATM.java`**: This is the entry point of the program. It manages user interactions, displays the menu, takes input, and delegates operations to the relevant classes.
+
+3. **`resources/`**: This folder contains non-code resources needed for the project.
+   - **`config.properties`**: A properties file that could contain configuration settings for the ATM system, such as default PIN, maximum withdrawal limit, etc.
+   - **`transactions.log`**: A text file where transaction logs are stored. This file can be used to track the history of transactions made by users.
+
+4. **`README.md`**: The markdown file that provides project details, how to set it up, how to use it, and the concepts covered in the ATM demo project.
+
+---
+
+### Example Class Descriptions:
+
+1. **`ATM.java`**:
+   - Entry point of the ATM program.
+   - Displays the ATM menu (e.g., balance check, withdraw, deposit).
+   - Takes user input and delegates operations to account and transaction classes.
+   - Handles basic error checking and prompts the user for valid input.
+
+2. **`Account.java`**:
+   - Represents a user’s account with balance, account number, and methods for deposits/withdrawals.
+   - Includes validation for operations (e.g., insufficient funds for withdrawals).
+
+3. **`Transaction.java`**:
+   - Represents a transaction (either a deposit or withdrawal).
+   - Logs transaction details like type, amount, and account involved.
+
+4. **`TransactionHistory.java`**:
+   - Keeps track of all the transactions in memory using collections like `ArrayList` or `LinkedList`.
+   - Allows querying the transaction history for a given account.
+
+5. **`UserInputHandler.java`**:
+   - Takes care of receiving and validating user input.
+   - Ensures that inputs like PIN, withdrawal amounts, etc., are within acceptable limits.
+
+6. **`Logger.java`**:
+   - Logs transactions and errors to the `transactions.log` file or the console.
+   - May use Java's built-in logging utilities or simple file-writing operations.
+
+---
+
+### How to Use the Project:
+Once you've set up the project (by cloning or extracting the repository), follow these steps to use it:
+1. Run the `ATM.java` file.
+2. Enter your PIN when prompted.
+3. Choose one of the available operations:
+   - Check Balance
+   - Deposit Funds
+   - Withdraw Funds
+4. Transaction history is logged and can be viewed from the console or by checking the `transactions.log` file.
+
+---
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributing
+Feel free to fork this project, create a pull request, or open issues for improvements and bug fixes.
+
+## Acknowledgements
+- Thanks to the open-source community for providing valuable libraries and tools.
+
+---
+
+**ATM Demo Project in Java**  
+This project demonstrates a real-world example of applying Java's core concepts in a simple ATM system simulation.
+
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
